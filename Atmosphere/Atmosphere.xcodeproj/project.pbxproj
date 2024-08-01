@@ -40,6 +40,10 @@
 		CC07A75A2C53840B004E2A7B /* fall-tree.json in Resources */ = {isa = PBXBuildFile; fileRef = CC07A74B2C53840A004E2A7B /* fall-tree.json */; };
 		CC07A75B2C53840B004E2A7B /* night.json in Resources */ = {isa = PBXBuildFile; fileRef = CC07A74C2C53840A004E2A7B /* night.json */; };
 		CC07A75C2C53840B004E2A7B /* winter.json in Resources */ = {isa = PBXBuildFile; fileRef = CC07A74D2C53840A004E2A7B /* winter.json */; };
+		CCEEBF742C5BA693008F956C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEEBF732C5BA693008F956C /* HomeView.swift */; };
+		CCEEBF782C5BAB6B008F956C /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEEBF772C5BAB6B008F956C /* View+Extensions.swift */; };
+		CCEEBF7B2C5BABE6008F956C /* TouchableModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEEBF7A2C5BABE6008F956C /* TouchableModifier.swift */; };
+		CCEEBF7F2C5BACB4008F956C /* SquareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEEBF7E2C5BACB4008F956C /* SquareButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +99,10 @@
 		CC07A74B2C53840A004E2A7B /* fall-tree.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "fall-tree.json"; sourceTree = "<group>"; };
 		CC07A74C2C53840A004E2A7B /* night.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = night.json; sourceTree = "<group>"; };
 		CC07A74D2C53840A004E2A7B /* winter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = winter.json; sourceTree = "<group>"; };
+		CCEEBF732C5BA693008F956C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CCEEBF772C5BAB6B008F956C /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		CCEEBF7A2C5BABE6008F956C /* TouchableModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchableModifier.swift; sourceTree = "<group>"; };
+		CCEEBF7E2C5BACB4008F956C /* SquareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,11 +154,13 @@
 		172A00D02C48599600D0E010 /* Atmosphere */ = {
 			isa = PBXGroup;
 			children = (
+				CCEEBF762C5BAB51008F956C /* Extensions */,
 				172CFCB92C4C49FE009FBCDD /* Resources */,
 				172CFCB52C4C498D009FBCDD /* Network */,
 				172CFCB82C4C49CB009FBCDD /* Model */,
 				172CFCB72C4C49BB009FBCDD /* ViewModel */,
 				172CFCB62C4C499D009FBCDD /* Views */,
+				CCEEBF752C5BAA20008F956C /* Common */,
 				172A00D12C48599600D0E010 /* AtmosphereApp.swift */,
 				172A00D32C48599600D0E010 /* ContentView.swift */,
 				172A00D72C48599D00D0E010 /* Preview Content */,
@@ -196,6 +206,7 @@
 		172CFCB62C4C499D009FBCDD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CCEEBF722C5BA680008F956C /* HomeView */,
 				17996E202C4DAEA100846694 /* LottieVIew */,
 			);
 			path = Views;
@@ -274,6 +285,55 @@
 				172A00D52C48599D00D0E010 /* Assets.xcassets */,
 			);
 			path = Icons;
+			sourceTree = "<group>";
+		};
+		CCEEBF722C5BA680008F956C /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				CCEEBF732C5BA693008F956C /* HomeView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		CCEEBF752C5BAA20008F956C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CCEEBF7C2C5BAC89008F956C /* Button */,
+				CCEEBF792C5BABCA008F956C /* Touchable */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CCEEBF762C5BAB51008F956C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CCEEBF772C5BAB6B008F956C /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CCEEBF792C5BABCA008F956C /* Touchable */ = {
+			isa = PBXGroup;
+			children = (
+				CCEEBF7A2C5BABE6008F956C /* TouchableModifier.swift */,
+			);
+			path = Touchable;
+			sourceTree = "<group>";
+		};
+		CCEEBF7C2C5BAC89008F956C /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				CCEEBF7D2C5BAC93008F956C /* SquareButton */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		CCEEBF7D2C5BAC93008F956C /* SquareButton */ = {
+			isa = PBXGroup;
+			children = (
+				CCEEBF7E2C5BACB4008F956C /* SquareButton.swift */,
+			);
+			path = SquareButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,13 +489,17 @@
 			files = (
 				17996E152C4CE85300846694 /* DailyWeather.swift in Sources */,
 				17996E1C2C4D029500846694 /* CityViewModel.swift in Sources */,
+				CCEEBF742C5BA693008F956C /* HomeView.swift in Sources */,
 				172CFCBD2C4C4B17009FBCDD /* Network+Extensions.swift in Sources */,
 				1788A4672C4CE44700BCFE02 /* WeatherResponse.swift in Sources */,
+				CCEEBF7B2C5BABE6008F956C /* TouchableModifier.swift in Sources */,
 				17996E172C4CE87000846694 /* WeatherDetails.swift in Sources */,
 				172A00D42C48599600D0E010 /* ContentView.swift in Sources */,
 				172CFCBF2C4C4FA6009FBCDD /* NetworkManager.swift in Sources */,
 				17996E222C4DAEC400846694 /* LottieVIew.swift in Sources */,
 				172A00D22C48599600D0E010 /* AtmosphereApp.swift in Sources */,
+				CCEEBF782C5BAB6B008F956C /* View+Extensions.swift in Sources */,
+				CCEEBF7F2C5BACB4008F956C /* SquareButton.swift in Sources */,
 				172CFCBB2C4C4AA3009FBCDD /* Network.swift in Sources */,
 				17996E192C4CE8B500846694 /* Temperature.swift in Sources */,
 				1788A4692C4CE45900BCFE02 /* Weather.swift in Sources */,
